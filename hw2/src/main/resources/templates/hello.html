@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello Page</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('/img/snowflake.png') no-repeat center center fixed; /* Используем изображение как фон */
+            background-size: cover; /* Растягиваем изображение на всю высоту и ширину */
+        }
+
+        .centered-text {
+            text-align: center;
+            font-size: 50px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="centered-text">
+    <p th:text="${greeting}"></p>
+</div>
+</body>
+</html>
